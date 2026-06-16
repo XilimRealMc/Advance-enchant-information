@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enchant Database — Advanced Enchantments Wiki</title>
+<meta name="description" content="Database lengkap Advanced Enchantments: deskripsi, rarity, item, dan max level.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23151515'/%3E%3Crect x='3' y='2' width='9' height='12' fill='%237b3fa0'/%3E%3Crect x='3' y='2' width='9' height='2' fill='%23a35ed6'/%3E%3Crect x='5' y='5' width='5' height='1' fill='%23e9c46a'/%3E%3Crect x='5' y='7' width='5' height='1' fill='%23e9c46a'/%3E%3Crect x='5' y='9' width='3' height='1' fill='%23e9c46a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="title-block">
+      <h1 class="site-title"><span class="bracket">[</span>ENCHANT<span class="accent">_</span>DB<span class="bracket">]</span></h1>
+      <p class="site-sub">// advanced enchantments reference — <span id="totalCount">178</span> entries</p>
+    </div>
+    <div class="search-block">
+      <input type="text" id="searchInput" placeholder="cari nama atau efek enchant..." autocomplete="off">
+      <span class="search-glyph">&gt;</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="legend" aria-label="Legenda rarity">
+    <span class="legend-label">RARITY:</span>
+    <div id="rarityChips" class="chip-row"></div>
+    <button id="resetFilters" class="reset-btn">reset</button>
+  </section>
+
+  <section class="tag-filter" aria-label="Filter tipe item">
+    <span class="legend-label">ITEM:</span>
+    <div id="tagChips" class="chip-row tag-row"></div>
+  </section>
+
+  <p id="resultCount" class="result-count"></p>
+
+  <section id="cardGrid" class="card-grid" aria-live="polite"></section>
+
+  <p id="emptyState" class="empty-state" hidden>
+    ⛏ Gak nemu enchantment yang cocok. Coba kata kunci atau filter lain, bro.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <p>Dibuat dari data Advanced Enchantments plugin. Bukan situs resmi Mojang/Minecraft.</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
